@@ -17,13 +17,14 @@ const restartButton = document.getElementById("restartButton");
 const winningMessageTextElement = document.querySelector(
 	"[data-winning-message-text]"
 );
-
 let circleTurn;
 
+// calling function to setup game
 startGame();
-
+// Event listener on restart button to start new game
 restartButton.addEventListener("click", startGame);
 
+//function to setup game
 function startGame() {
 	circleTurn = false;
 	cellElements.forEach((cell) => {
